@@ -1,7 +1,23 @@
 var hangmanGame = {
 
 // establish initial array
-	gameWords = ["Statue of Liberty", "White House", "Golden Gate Bridge", "Niagara Falls", "Space Needle"];
+	wordsToPick: {
+		"Statue of Liberty" : {
+			picture: 'Statue_of_Liberty_National_Monument_STLI_02-05.jpg'
+		},
+		"White House" : {
+			picture: WhiteHouseSouthFacade.0.jpg
+		},
+		"Golden Gate Bridge" : {
+			picture: golden-gate-bridge-3.jpg
+		},
+		"Niagara Falls" : 
+			picture: Niagara Falls.jpg
+		},
+		"Space Needle": {
+			picture: Seattle_Space_Needle_Crop.jpg
+		}
+	},
 
 // keep track of words in play, letters in the words, guesses made and remaining, wins
 
