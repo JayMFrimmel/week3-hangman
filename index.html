@@ -1,10 +1,9 @@
-<!doctype html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Hangman</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -12,19 +11,31 @@
 		<h1>Travel to: United States Landmarks!</h1>
 	</header>
 
-	<sidebar>
-	</sidebar>
-
-	<main>
-		
-	</main>
-
-	<sidebar>
-	</sidebar>
-
-	<footer>
-		
-	</footer>
+	<div id="container">
+		<div id="game-section">
+				<p>Press any key to get started!</p>
+				
+				<div id="current-word-section">
+					<h3 class="section-title">Wins</h3>
+					<div id="wins"></div>
+				</div>
+				
+				<div id="current-word-section">
+					<h3 class="section-title">Current Word</h3>
+					<div id="current-word"></div>
+				</div>
+				
+				<div id="guesses-remaining-section">
+					<h3 class="section-title">Number of Guesses Remaining</h3>
+					<div id="guesses-remaining"></div>
+				</div>
+				
+				<div id="guessed-letters-section">
+					<h3 class="section-title">Letters Already Guessed</h3>
+					<div id="guessed-letters"></div>
+				</div>
+			</div>
+		</div>
 
 	<script src="assets/javascript/game.js"></script>
 		
