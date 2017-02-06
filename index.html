@@ -14,7 +14,22 @@
 </head>
 
 <body>
-	<div class="container">
+	<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">United States Landmarks</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">A Visual Travelogue / Hangman Style</h5>
+      </div>
+      <!-- get started button needs to start game not link to page
+      <div class="row center">
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+      </div> -->
+      <br><br>
+
+    </div>
+  </div>
+	<!--<div class="container">
 	<header>
 		<div class="row">
 			<div class="col s3"></div>
@@ -26,16 +41,56 @@
 				<div class="col s6"><h2>United States Landmarks!</h2></div>
 			<div class="col s3"></div>
 		</div>
-	</header>
+	</header> -->
 
-	<div id="main-container">
-		<div id="game-section">
-				<p>Press any key to get started!</p>
-				<p>Some landmarks have more than one word, so use the 'space bar' for those.</p>
-				<p>To play another round, click on the 'refresh' button above.</p>
-				<h4>Good Luck!</h4>
+	<div class="container">
+		<div class="section">
+			<div class="row">
+				<div class="col s12 m4">
+					<h5 class="center">How To Play & Wins</h5>	
+						<p class="light">Press any key to get started!
+						<br>
+						Guess the letters of the names of famous U.S. landmarks! If you guess correctly a photo of the landmark wil be displayed. Some landmarks have more than one word, so use the 'space bar' for those. To play another round, click on the 'refresh' button above.</p>
+					<h5 class="center">Good Luck!</h5>
+						<br>
+						<br>
 				
-				<div id="current-word-section">
+					<div id="current-word-section">
+						<h4 class="center">Wins</h4>
+							<div class="center" id="wins"></div>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<h5 class="center">Current Landmark / Number of Guesses Left</h5>
+						<div id="current-word-section">
+							<h4 class="center">Current Word</h4>
+								<div class="center" id="current-word">			
+								</div>
+						</div>
+						<div id="guesses-remaining-section">
+							<h4 class="center">Number of Guesses Remaining</h4>
+							<div class="center" id="guesses-remaining">
+							</div>
+						</div>
+				</div>
+
+				<div class="col s12 m4">
+					<h5 class="center">Letters Guessed / Landmark Image</h5>		
+						<div id="guessed-letters-section">
+							<h4 class="center">Letters Already Used</h4>
+								<div class="center" id="guessed-letters">	
+								</div>	
+						</div>
+
+						<div id="image-display">
+							<h4 class="center">Your Landmark!</h4>	
+								<div class="center" id="image">					
+								</div>
+						</div>
+				</div>
+
+				<!--<div id="current-word-section">
 					<h3 class="section-title">Wins</h3>
 					<div id="wins"></div>
 				</div>
@@ -53,8 +108,18 @@
 				<div id="guessed-letters-section">
 					<h3 class="section-title">Letters Already Guessed</h3>
 					<div id="guessed-letters"></div>
-				</div>
+				</div> -->
 		</div>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col 16 s12">
+					<h5 class="center">Copyright 2016 Jay M. Frimmel</h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 		<!--Import jQuery before materialize.js-->
   		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   		<!-- Compiled and minified Materialize JavaScript -->
@@ -62,8 +127,5 @@
 		<script src="assets/javascript/game.js"></script>
 	</div>
 </body>
-<footer>
-	
-</footer>
 
 </html>
