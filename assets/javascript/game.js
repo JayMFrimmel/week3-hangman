@@ -2,19 +2,19 @@ var hangmanGame = {
 
 // establish initial array
 	wordToPick: {
-		"Statue of Liberty" : {
+		"statue of liberty" : {
 			picture: 'Statue_of_Liberty_National_Monument_STLI_02-05.jpg'
 		},
-		"White House" : {
+		"white house" : {
 			picture: 'WhiteHouseSouthFacade.0.jpg'
 		},
-		"Golden Gate Bridge" : {
+		"golden gate bridge" : {
 			picture: 'golden-gate-bridge-3.jpg'
 		},
-		"Niagara Falls" : {
+		"niagara falls" : {
 			picture: 'Niagara Falls.jpg'
 		},
-		"Space Needle" : {
+		"space needle" : {
 			picture: 'Seattle_Space_Needle_Crop.jpg'
 		}
 	},
