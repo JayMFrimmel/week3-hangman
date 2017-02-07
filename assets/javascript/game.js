@@ -3,19 +3,19 @@ var hangmanGame = {
 // establish initial array
 	wordToPick: {
 		"statue of liberty" : {
-			picture: 'Statue_of_Liberty_National_Monument_STLI_02-05.jpg'
+			picture: 'assets/images/statue_of_Liberty_National_Monument_STLI_02-05.jpg'
 		},
 		"white house" : {
-			picture: 'WhiteHouseSouthFacade.0.jpg'
+			picture: 'assets/images/WhiteHouseSouthFacade.0.jpg'
 		},
 		"golden gate bridge" : {
-			picture: 'golden-gate-bridge-3.jpg'
+			picture: 'assets/images/golden-gate-bridge-3.jpg'
 		},
 		"niagara falls" : {
-			picture: 'Niagara Falls.jpg'
+			picture: 'assets/images/Niagara Falls.jpg'
 		},
 		"space needle" : {
-			picture: 'Seattle_Space_Needle_Crop.jpg'
+			picture: 'assets/images/Seattle_Space_Needle_Crop.jpg'
 		}
 	},
 
@@ -121,7 +121,7 @@ processUpdateTotalGuesses: function() {
 	//update wins function
 	updateWins: function() {
 
-		//this won't work for words with double or triple letters
+		//this makes letter choice work for words with double or triple letters
 			var lettersOfTheWordClone = this.lettersOfTheWord.slice(); //clones the array
 			this.matchedLetters.sort().join('') == lettersOfTheWordClone.sort().join('');
 
@@ -142,13 +142,7 @@ processUpdateTotalGuesses: function() {
 			
 			document.querySelector('#wins').innerHTML = this.wins;
 
-			//document.querySelector('#music').innerHTML = this.wordsToPick[this.wordInPlay].song + " By " + this.wordInPlay;
-
-			document.querySelector('#landmarkDIV').innerHTML = '<img class="landmarkImage" src="images/' + this.wordsToPick[this.wordInPlay].picture + '" alt="' + this.wordsToPick[this.wordInPlay].picture + '">';
-
-			//var audio = new Audio(this.wordsToPick[this.wordInPlay].preview);
-			//audio.play();
-
+			document.querySelector('#landmarkDIV').innerHTML = '<img class="landmarkImage" src="images/' + this.wordToPick[this.wordInPlay].picture + '" alt="' + this.wordToPick[this.wordInPlay].picture + '">';
 
 			return true;
 		}else{
