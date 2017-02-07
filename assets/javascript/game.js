@@ -163,3 +163,15 @@ document.onkeyup = function(event) {
 	hangmanGame.letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
 	hangmanGame.updatePage(hangmanGame.letterGuessed);
 }
+//function initNewGame(){
+    // setup game vars and cards
+//}
+
+//function endGame(){
+    // clean game vars and remove cards
+//}
+
+//function newOrReset(){
+  //  endGame();
+    //initNewGame();
+//}   

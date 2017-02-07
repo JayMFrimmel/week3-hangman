@@ -16,3 +16,6 @@ p {
 	line-height: 27px;
 	font-weight: 500;
 }
+.card-title {
+	color: orange;
+}
